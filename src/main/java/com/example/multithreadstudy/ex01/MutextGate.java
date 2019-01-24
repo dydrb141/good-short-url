@@ -4,7 +4,7 @@ public class MutextGate {
     private int counter = 0;
     private String name = "Nobody";
     private String address = "Nowhere";
-    private final Mutex mutex = new Mutex();
+    /*private final Mutex mutex = new Mutex();
 
     public void pass(String name, String address) {
         mutex.lock();
@@ -30,7 +30,7 @@ public class MutextGate {
         }
 
         return s;
-    }
+    }*/
 
     private void check() {
         if (name.codePointAt(0) != address.charAt(0)) {
